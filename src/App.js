@@ -8,7 +8,6 @@ class App extends Component {
       display:'flex',
       justifyContent:'center',
       alignItems:'center',
-      border:'1px solid grey',
       width:'100vw',
       height:'100vh',
       flexWrap:'wrap'
