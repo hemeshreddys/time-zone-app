@@ -15,14 +15,15 @@ class DigitalTimeZone extends Component{
             backgroundColor:this.props.digiColor
         }
         const itemsCountry ={
-            color:'#C5C3C6',
+            color:'#848484',
+            fontSize:'18px',
             fontFamily: 'Anonymous Pro, monospace',
             
         }
         const itemsTime ={
             color:'grey',
             fontSize:'24px',
-            fontFamily: 'Julius Sans One, sans-serif',
+            fontFamily: 'Quicksand, sans-serif',
         }
         return(
             <div style={container}>
@@ -30,7 +31,8 @@ class DigitalTimeZone extends Component{
                     {this.props.name}
                 </div>
                 <div style={itemsTime}>
-                    <Clock format={'h:mm:ssa'} ticking={true} timezone={this.props.tZone} />
+                    <Clock format={'h:mm:ss a'} 
+                    ticking={true} timezone={this.props.tZone} />
                 </div>
             </div>
         );

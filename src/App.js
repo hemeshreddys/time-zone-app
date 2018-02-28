@@ -3,6 +3,19 @@ import './App.css';
 import DigitalTimeZone from './DigitalTimeZone';
 
 class App extends Component {
+  constructor(){
+    super();
+    this.state={
+      data:
+      [
+        { id:1, zone:"US/Pacific", cname:"America" },
+        { id:2, zone:"Asia/Kolkata", cname:"India" },
+        { id:3, zone:"Australia/Melbourne", cname:"Melbourne" },
+        { id:4, zone:"Asia/Tokyo", cname:"Japan" },
+        { id:5, zone:"Asia/Singapore", cname:"Singapore" },
+      ]
+    }
+  }
   render() {
     const container = {
       display:'flex',
@@ -14,12 +27,11 @@ class App extends Component {
   }
     return (
       <div style={container}>
-        <DigitalTimeZone tZone="US/Pacific" name="America" hAndw="150px" digiColor="white"/>
-        <DigitalTimeZone tZone="Asia/Kolkata" name="India" hAndw="200px" digiColor="white"/>
-        <DigitalTimeZone tZone="Australia/Melbourne" name="Melbourne" hAndw="150px" digiColor="white"/>
+          { this.state.data.map((dynamicData,i) =>
+            <DigitalTimeZone tZone={dynamicData.zone} name={dynamicData.cname} hAndw="150px" digiColor="white"/>
+          )}
       </div>
     );
   }
 }
-
 export default App;
