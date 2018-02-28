@@ -2,8 +2,9 @@
   "name": "time-zone-app",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://hemeshreddys.github.io/time-zone-app",
+  "homepage": "http://hemeshreddys.github.io/time_zone_app",
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-live-clock": "^2.0.2",
