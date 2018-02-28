@@ -7,13 +7,12 @@ class DigitalTimeZone extends Component{
             display:'flex',
             justifyContent:'center',
             alignItems:'center',
-            border:'1px solid grey',
-            width:200,
-            height:200,
+            width:this.props.hAndw,
+            height:this.props.hAndw,
             borderRadius:'100px',
             flexDirection:'column',
             margin:'2px',
-            backgroundColor:'#204E4A'
+            backgroundColor:this.props.digiColor
         }
         const itemsCountry ={
             color:'#C5C3C6',
@@ -21,7 +20,7 @@ class DigitalTimeZone extends Component{
             
         }
         const itemsTime ={
-            color:'#DCDCDD',
+            color:'grey',
             fontSize:'24px',
             fontFamily: 'Julius Sans One, sans-serif',
         }

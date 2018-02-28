@@ -14,9 +14,9 @@ class App extends Component {
   }
     return (
       <div style={container}>
-        <DigitalTimeZone tZone="US/Pacific" name="America"/>
-        <DigitalTimeZone tZone="Asia/Kolkata" name="India"/>
-        <DigitalTimeZone tZone="Australia/Melbourne" name="Melbourne"/>
+        <DigitalTimeZone tZone="US/Pacific" name="America" hAndw="150px" digiColor="white"/>
+        <DigitalTimeZone tZone="Asia/Kolkata" name="India" hAndw="200px" digiColor="white"/>
+        <DigitalTimeZone tZone="Australia/Melbourne" name="Melbourne" hAndw="150px" digiColor="white"/>
       </div>
     );
   }
